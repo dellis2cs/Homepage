@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Montserrat;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(22, 169, 206);
+}
+body {
+  margin: 0;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  z-index: 2;
+}
+
+.imgContainer {
+  background-image: url("./images/Adenir\ 21287211.jpg");
+  background-size: cover;
+  min-width: 400px;
+  min-height: 400px;
+  box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headerTextContainer {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.icons {
+  align-self: end;
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.workContainer {
+  padding: 50px;
+}
+
+.workH1 {
+  margin-bottom: 50px;
+}
+
+.card {
+  border: 1px solid black;
+  max-width: 300px;
+  text-align: center;
+  height: 400px;
+  align-self: center;
+  justify-self: center;
+}
+
+.cardImg {
+  height: 250px;
+  background-color: rgb(123, 68, 174);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footerContainer {
+  width: 100vh;
+  height: 300px;
+  background-color: rgb(22, 169, 206);
+}
+
+@media (max-width: 900px) {
+  .headerContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .workH1 {
+    text-align: center;
+  }
+}
